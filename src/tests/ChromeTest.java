@@ -10,7 +10,9 @@ public class ChromeTest extends TestBase {
 		SearchPage searchPage = new SearchPage(driver);
 		searchPage.gotoSearchPage()
 				  .openFilterByRegYear("2015")
-				  .sortingCars("Höchster Preis");
+				  .sortingCars("Höchster Preis")
+				  .verifyFilter(2015)
+				  .verifySorting();
 	}
 	
 }

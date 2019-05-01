@@ -20,10 +20,10 @@ public class TestBase {
         driver.manage().window().maximize();
 	}
 	
-//	@AfterClass
-//	public static void tearDown() {
-//
-//	    driver.quit();
-//	}
-//		
+	@AfterClass
+	public static void tearDown() {
+
+	    driver.quit();
+	}
+		
 }
